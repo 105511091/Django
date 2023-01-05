@@ -1,0 +1,70 @@
+{% extends "BasePage.html" %}
+
+{% block pageTitle %}
+產品資訊
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/goods2.css"/>
+{% endblock %}
+
+{% block mainContent %}
+
+	<div class="goodArea">
+
+		<div class="info">
+			<h1>門票</h1>
+			<table width="50%"  border="5">
+				<tr>
+					<td><strong>成人</strong><br><p>18歲或以上</p></td>
+					<td><strong>青年</strong><br><p>13-17歲</p></td>
+					<td><strong>兒童</strong><br><p>4-12歲</p></td>
+				</tr>
+				<tr>
+					<td>¥2,400</a></td>
+					<td>¥2,000</a></td>
+					<td>¥1,500</td>
+				</tr>
+			</table>
+			<div class="onfo">
+				<ul>
+					<li>3歲以下兒童可於監護人陪同下免費入場。</li>
+					<li>持有「殘障者手冊」﹑「療育手冊」及「精神殘障者保健福祉手冊」的日本居民及一名隨行人士可以半價購買入場門券。請於入口的售票處購買門券。</li>
+					<li>恕不提供團體優惠。</li>
+				</ul>
+				<a href="/cart">💴Buy💴</a>
+			</div>
+			
+		</div>
+					
+		<div class="shop">
+			<h1>銷售點</h1>
+			<div class="enfo">
+				<table width="50%"  border="5" cellpadding="10" cellspacing="5">
+					<tr>
+						<td colspan="3"><strong>售票處及自動售票機</strong></td>
+					</tr>
+					<tr>
+						<td>現金</td>
+						<td colspan="2"><strong>只接受日圓</strong></td>
+						
+					</tr>
+					<tr>
+						<td>信用卡</td>
+						<td colspan="2"><img src="sedjango/static/images/cd1.png"><img src="static/images/cd2.png"></td>
+					</tr>
+					<tr>
+						<td>便利店</td>
+						<td colspan="2"><img srcset="static/images/711.png,static/images/law.png,static/images/fam.png"></td>
+					</tr>
+				</table>
+			</div>	
+			
+		</div>
+		
+		
+
+	</div>
+
+
+{% endblock %}

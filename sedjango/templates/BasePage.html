@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		{% block pageTitle %}
+		{% endblock %}
+	</title>
+
+	<link href="/static/css/index2.css " rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	{% block css %}
+	{% endblock %}
+
+	{% block js %}
+	{% endblock %}
+
+</head>
+<body>
+	
+	<div id="wrapper">
+
+		<div id="banner">
+			<div id="logo">
+				<a href="http://127.0.0.1:8000/">
+					<img src="/static/images/logo2.jpg">
+				</a>
+			</div>	
+			
+			<div id="menu">
+				<ul class="bannermenu">
+					<a href="/setime"><li class="menutxt">營業時間</li></a>
+					<a href="/info"><li class="menutxt">門票</li></a>
+					<a href="/product"><li class="menutxt">動物圖鑑</li></a>
+					<a href="/news"><li class="menutxt">新聞發布</li></a>
+					{% if request.session.isAlive %}
+
+						<a href="/member"><li class="menutxt">會員管理</li></a>
+						<a href="/admin"><li class="menutxt">後台</li></a>
+						<a href="/logout"><li class="menutxt">登出</li></a>
+
+					{% else %}
+						<a href="/login"><li class="menutxt">會員登入</li></a>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+		
+		<div id="ad">
+			<hr>
+		</div>
+
+		<div id="content">
+			
+			{% block mainContent %}
+			{% endblock %}
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<span>COPYRIGHT ©2022 WATSON DESGIN. ALL RIGHTS RESERVED.</span>
+	</div>
+
+</body>
+
+</html>

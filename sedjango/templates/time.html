@@ -1,0 +1,30 @@
+{% extends "BasePage.html" %}
+
+{% block pageTitle %}
+營業時間
+{% endblock %}
+
+
+{% block css %}
+	<link rel="stylesheet" href="/static/css/time.css"/>
+{% endblock %}
+
+{% block mainContent %}
+
+<div style="margin-top: 50px;"></div>
+
+ <div id="text">
+    	<h1>營業時間</h1>
+        <h6>水族館</h6>
+        <p>
+        	09:00 - 20:00
+        	<br>
+        	最終入場時間為營業結束前90分鐘。
+        </p>
+        <h6>營業時間可基於情況所需而不時更改而不作任何事先通知。基於安全理由，因應當日人流状況本館有可能實施入場管制。</h6>
+        
+
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTaipei&showNav=1&showPrint=0&showTabs=0&src=ajEyMjczMjg4NkBnbWFpbC5jb20&src=emgtdHcudGFpd2FuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+{% endblock %}

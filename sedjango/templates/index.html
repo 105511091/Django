@@ -1,0 +1,58 @@
+{% extends "BasePage.html" %}
+
+{% block pageTitle %}
+首頁
+
+{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="/static/css/map.css"/>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+
+{% block mainContent %}
+
+
+ <div id="company">
+        
+        <h1>交通指南</h1>
+        <p>
+            "位於沖繩縣南部豐見城市，距離那霸機場只需20分鐘*車程"
+            <br>
+            "由那霸機場至水族館的直線距離約為5km，實際行駛時間將因應交通狀況而有差距。"
+        </p>
+        
+        <p>
+            "〒901-0225 沖繩縣豐見城市豐崎3-35"
+            <br>
+            "MAPCODE : 232 543 400*25"
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.2417642519094!2d127.64860721502899!3d26.15625468345916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569b4739496c7%3A0x6e6b68acb452b177!2zRE1NIEthcml5dXNoaeawtOaXj-mkqA!5e0!3m2!1szh-TW!2stw!4v1672569159763!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="car">
+        <h3>自行駕車</h3>
+        <img src="static/images/car.png">
+        <div class="cars">
+            <h4>從那霸機場出發</h4>
+            <p>
+                沿著國道331號（豐見城道路）向南行駛約5km，
+                <br>
+                所需時間約20分鐘。
+            </p>
+            <h4>如使用高速公路</h4>
+            <p>
+                由那霸機場自動車道的豐見城・名嘉地出口行駛約
+                <br>
+                3km，所需時間約10分鐘。
+            </p>
+                
+        </div>
+</div>
+
+
+
+	
+{% endblock %}

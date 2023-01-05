@@ -1,0 +1,20 @@
+.hot{
+	margin-top: 100px;
+	width: 80%;
+}
+.hotbar{
+	width: 100%;
+	clear: both;
+	margin: 5%;
+}
+
+.hotleft{
+	float: left;
+	width: 40%;
+}
+
+.hotright{
+	float: right;
+	width: 60%;
+
+}
